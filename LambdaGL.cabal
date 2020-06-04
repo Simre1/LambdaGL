@@ -1,0 +1,67 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f73f63d782e90ba60475dcbed3119c57dae075854d91e89730b10b494e3c20da
+
+name:           LambdaGL
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/Simre1/LambdaGL#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Data.HList
+      Data.SizedVector
+      Data.StateAction
+      Graphics.LambdaGL.Buffer
+      Graphics.LambdaGL.Draw
+      Graphics.LambdaGL.Program
+      Graphics.LambdaGL.Shader
+      Graphics.LambdaGL.Texture
+      Graphics.LambdaGL.Types.List
+      Graphics.LambdaGL.Types.Shared
+      Graphics.LambdaGL.Uniform
+      Graphics.LambdaGL.Utility
+  other-modules:
+      Paths_LambdaGL
+  hs-source-dirs:
+      src
+  default-extensions: OverloadedStrings GADTs TypeFamilies DataKinds TypeOperators PatternSynonyms FlexibleInstances FlexibleContexts MultiParamTypeClasses RankNTypes ScopedTypeVariables FunctionalDependencies TypeApplications OverloadedLists PolyKinds UndecidableInstances GeneralisedNewtypeDeriving StandaloneDeriving FunctionalDependencies ConstraintKinds
+  build-depends:
+      OpenGL
+    , StateVar
+    , base >=4.7 && <5
+    , bytestring
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable example
+  main-is: Main.hs
+  other-modules:
+      Example01
+      Paths_LambdaGL
+  hs-source-dirs:
+      example
+  default-extensions: OverloadedStrings GADTs TypeFamilies DataKinds TypeOperators PatternSynonyms FlexibleInstances FlexibleContexts MultiParamTypeClasses RankNTypes ScopedTypeVariables FunctionalDependencies TypeApplications OverloadedLists PolyKinds UndecidableInstances GeneralisedNewtypeDeriving StandaloneDeriving FunctionalDependencies ConstraintKinds
+  build-depends:
+      LambdaGL
+    , OpenGL
+    , StateVar
+    , base >=4.7 && <5
+    , bytestring
+    , sdl2
+    , text
+    , vector
+  default-language: Haskell2010

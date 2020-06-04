@@ -1,0 +1,54 @@
+name:                LambdaGL
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/Simre1/LambdaGL#readme
+license:             BSD3
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2020 Author name here
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - OpenGL
+  - text
+  - StateVar
+  - bytestring
+  - vector
+
+library:
+  source-dirs: src
+
+executables:
+  example:
+    source-dirs:      example
+    main:             Main.hs
+    dependencies:
+      - sdl2
+      - LambdaGL
+
+
+default-extensions:
+  - OverloadedStrings
+  - GADTs
+  - TypeFamilies
+  - DataKinds
+  - TypeOperators
+  - PatternSynonyms
+  - FlexibleInstances
+  - FlexibleContexts
+  - MultiParamTypeClasses
+  - RankNTypes
+  - ScopedTypeVariables
+  - FunctionalDependencies
+  - TypeApplications
+  - OverloadedLists
+  - PolyKinds
+  - UndecidableInstances
+  - GeneralisedNewtypeDeriving
+  - StandaloneDeriving
+  - FunctionalDependencies
+  - ConstraintKinds
