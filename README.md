@@ -10,10 +10,10 @@ Feel free to check out the code as well as the example.
 
 I am using stack as my build tool. 
 
-``
+```
 git clone https://github.com/Simre1/LambdaGL.git
 
 stack build
 
 stack exec example
-``
+```
